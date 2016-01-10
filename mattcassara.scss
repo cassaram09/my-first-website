@@ -1,4 +1,4 @@
-$font-stack:    "Ubuntu", Arial, Helvetica, sans-serif;
+$font-stack:    "Questrial", Arial, Helvetica, sans-serif;
 $primary-color: #111;
 $secondary-color: #123456;
 $accent-color: #111;
@@ -46,6 +46,7 @@ h1{
 h2{
 	font-size: 44px;
 	margin: 10px 0px 30px 0px;
+	text-transform: uppercase;
 }
 
 h3{
@@ -120,13 +121,18 @@ a{
 	
 }
 
+.divider{
+	border-top: 2px #444 solid;
+}
+
 /* -------------------- Hero Section -------------------------- */
 
 .hero{
 	background: url("_img/andes.jpg") no-repeat center center;
 	@include background-size(cover);
 	text-align: center;
-	padding: 20px 0px 200px 0px;
+	padding: 0px 0px 200px 0px;
+	color: #fff;
 }
 
 .hero ul{
@@ -142,28 +148,7 @@ a{
 	margin: 0px 0px 0px 20px;
 }
 
-.logo{
-	text-align: left;
-}
-
-.header{
-	background-color: rgba(100,100,100,0.4);
-}
-
-.main{
-
-}
-.main .content{
-	padding: 100px 0px 100px 0px;
-}
-/* -------------------- Intro ------------------------------- */
-
-.intro{
-	background-color: #111;
-	padding: 60px 0px 60px 0px;
-	text-align: center;
-}
-.intro img{
+.hero img{
 	margin: 20px 0px 20px 0px;
 	height: 300px;
 	border-radius: 100%;
@@ -172,85 +157,88 @@ a{
 	box-shadow: 5px 5px 2px rgba(0,0,0,0.4);
 }
 
-.intro img:hover{
+.hero img:hover{
 	border: 2px solid #aaa;
 	box-shadow: 8px 8px 2px rgba(20,20,20,1);
 	transform: scale(1.05,1.05);
 }
 
-.intro h2{
-	color: #fff;
+.logo{
+	text-align: left;
 }
 
-.intro-content{
-	padding: 20px 0px 20px 0px;
+.header{
+	background-color: rgba(100,100,100,0.4);
 }
+
+#header_nav{
+	width: 100%;
+	background-color: rgba(0,0,0, 0.5);
+	padding: 0px 0px 20px 0px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100px;
+}
+
+.main{
+
+}
+.main .content{
+	padding: 100px 0px 100px 0px;
+}
+
 
 /* -------------------- About ------------------------------- */
 
 .about{
-	text-align: center;
+	text-align: left;
 	padding: 60px 0px 60px 0px;
 }
 
-.about img{
-	height: 100px;
-}
-.about .content{
-	border: 2px solid #aaa;
-	padding: 20px 0px 10px 0px;
+.about-content{
+	padding: 20px 20px 10px 20px;
 	transition: border 0.4s;
-}
-
-.about .content:hover{
-	border: 2px solid $primary-color;
-	
+	background-color: #eee;
 }
 
 .about p, .about h2, .about h3{
 	color: #111;
 }
 
+/* -------------------- Work Experience ------------------------------- */
+
+.work{
+	text-align: left;
+	padding: 60px 0px 60px 0px;
+	color: #eee;
+	background: url("_img/andes.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+.work-content{
+	padding: 20px 20px 10px 20px;
+	transition: border 0.4s;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* -------------------- Employment ------------------------------- */
 
-.employment{
-	background-color: $primary-color;
-	padding: 60px 0px 60px 0px
+.skills{
+	text-align: left;
+	padding: 60px 0px 60px 0px;
+	color: #111;
+	background-color: #afafaf;
 }
 
-.employment img{
-	margin: 20px 0px 20px 0px;
-	height: 200px;
-	border-radius: 100%;
-	border: 2px solid #aaa;
-	transition: border 0.4s, box-shadow 0.4s, transform 0.4s;
-	box-shadow: 5px 5px 2px rgba(0,0,0,0.4);
+.skills-content{
+	
+	padding: 20px 20px 10px 20px;
+	transition: border 0.4s;
+	background-color: #eee;
 }
 
-.employment img:hover{
-	border: 2px solid $primary-color;
-	box-shadow: 8px 8px 2px rgba(20,20,20,1);
-	transform: scale(1.05,1.05);
-}
-
-.employment ul{
-	list-style-type: square #fff;;
-	padding: 0px 20px 20px 20px;
-}
-
-.employment-logo{
-	text-align: center;
-
-}
-
-.employment h2{
-	text-align: center;
-}
-
-.employment ul, p, h2, h3, h4{
-	color: #fff;
-}
-/* -------------------- Employment ------------------------------- */
+/* -------------------- Education ------------------------------- */
 
 .education{
 	background-color: #fff;
@@ -265,7 +253,7 @@ a{
 /* -------------------- Contact --------------------------------- */
 
 .contact{
-	background-color: $primary-color;
+	background-color: #ddd;
 	padding: 60px 0px 60px 0px;
 }
 
