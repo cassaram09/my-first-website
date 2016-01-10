@@ -1,0 +1,269 @@
+/* ---------------- Globals -----------------*/
+html, body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.container-wide {
+  max-width: 1140px;
+  margin: 0px auto;
+  /*background-color: rgba(100,100,180, 0.4);*/
+}
+
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+  /*background-color: rgba(100,180,100, 0.4);*/
+}
+
+/* -------------- Text Styles ----------------- */
+h1 {
+  font-size: 64px;
+  margin: 40px 0px 40px 0px;
+}
+
+h2 {
+  font-size: 44px;
+  margin: 10px 0px 30px 0px;
+}
+
+h3 {
+  font-size: 28px;
+  margin: 10px 0px 10px 0px;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 10px 0px 10px 0px;
+}
+
+h5 {
+  font-size: 18px;
+  margin: 10px 0px 10px 0px;
+}
+
+h6 {
+  font-size: 14px;
+  margin: 10px 0px 10px 0px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  margin: 10px 0px 10px 0px;
+}
+
+a {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 10px 25px;
+  color: #fff;
+  transition: border 0.4s;
+  border: 1px solid #fff;
+}
+
+.btn-white {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-white:hover {
+  border: 1px solid #111;
+}
+
+/*
+.btn-clear{
+	border: 1px solid #111;
+	background-color: transparent;
+}
+
+.btn-clear:hover{
+	border: 1px solid #fff; 
+}
+*/
+.col-4-12 {
+  background-color: red;
+}
+
+.col-8-12 {
+  background-color: red;
+}
+
+/* -------------------- Hero Section -------------------------- */
+.hero {
+  background: url("_img/brick.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  padding: 20px 0px 200px 0px;
+}
+
+.hero ul {
+  list-style: none;
+  text-align: right;
+  padding: 9px 0px 9px 0px;
+}
+
+.hero ul li {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  margin: 0px 0px 0px 20px;
+}
+
+.logo {
+  text-align: left;
+}
+
+.header {
+  background-color: rgba(100, 100, 100, 0.4);
+}
+
+.main .content {
+  padding: 100px 0px 100px 0px;
+}
+
+/* -------------------- Intro ------------------------------- */
+.intro {
+  background-color: #111;
+  padding: 60px 0px 60px 0px;
+  text-align: center;
+}
+
+.intro img {
+  margin: 20px 0px 20px 0px;
+  height: 300px;
+  border-radius: 100%;
+  border: 2px solid #aaa;
+  transition: border 0.4s, box-shadow 0.4s, transform 0.4s;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.intro img:hover {
+  border: 2px solid #aaa;
+  box-shadow: 8px 8px 2px #141414;
+  transform: scale(1.05, 1.05);
+}
+
+.intro h2 {
+  color: #fff;
+}
+
+.intro-content {
+  padding: 20px 0px 20px 0px;
+}
+
+/* -------------------- About ------------------------------- */
+.about {
+  text-align: center;
+  padding: 60px 0px 60px 0px;
+}
+
+.about img {
+  height: 100px;
+}
+
+.about .content {
+  border: 2px solid #aaa;
+  padding: 20px 0px 10px 0px;
+  transition: border 0.4s;
+}
+
+.about .content:hover {
+  border: 2px solid #111;
+}
+
+.about p, .about h2, .about h3 {
+  color: #111;
+}
+
+/* -------------------- Employment ------------------------------- */
+.employment {
+  background-color: #111;
+  padding: 60px 0px 60px 0px;
+}
+
+.employment img {
+  margin: 20px 0px 20px 0px;
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid #aaa;
+  transition: border 0.4s, box-shadow 0.4s, transform 0.4s;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.employment img:hover {
+  border: 2px solid #111;
+  box-shadow: 8px 8px 2px #141414;
+  transform: scale(1.05, 1.05);
+}
+
+.employment ul {
+  list-style-type: square #fff;
+  padding: 0px 20px 20px 20px;
+}
+
+.employment-logo {
+  text-align: center;
+}
+
+.employment h2 {
+  text-align: center;
+}
+
+.employment ul, p, h2, h3, h4 {
+  color: #fff;
+}
+
+/* -------------------- Employment ------------------------------- */
+.education {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 0px 60px 0px;
+}
+
+.education h2, .education h3, .education p {
+  color: #111;
+}
+
+/* -------------------- Contact --------------------------------- */
+.contact {
+  background-color: #111;
+  padding: 60px 0px 60px 0px;
+}
+
+/* -------------------- Blog ------------------------------- */
+.blog {
+  background-color: #fff;
+  padding: 60px 0px 60px 0px;
+}
+
+.blog h2, .blog h3, .blog p {
+  color: #000;
+}
+
+.blog h2 {
+  margin: 0px 0px 20px 0px;
+}
+
+/* -------------------- Footer ------------------------------- */
+.footer {
+  background-color: #000;
+  padding: 60px 0px 60px 0px;
+}
+
+.credit {
+  font-size: 8px;
+  color: #888;
+}
